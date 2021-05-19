@@ -1,6 +1,6 @@
 // Entscheidungsstrukturen | control structures
 
-
+/*
 // Deklaration
 let ageJohn,ageMark;
 let isJohnOlder,isJohnEqual,isJohnYounger;
@@ -18,6 +18,7 @@ ageMark = parseInt(prompt("Wie alt ist Mark?"));
 isJohnOlder = (ageJohn > ageMark);
 isJohnEqual = (ageJohn == ageMark);
 isJohnYounger = (ageJohn < ageMark);
+*/
 
 // Ausgabezweig
 //console.log("isJohnOlder: " + isJohnOlder);
@@ -54,7 +55,7 @@ else
 
 /************ IF - ELSE If ************/
 // mit Alternativen Fällen (älter, jünger, gleich alt)
-
+/*
 if (isJohnOlder) // ageJohn > ageMark
 {
     // Ja-Zweig / true
@@ -71,6 +72,70 @@ else
     // letzte Alternative / false
     console.log("John ist jünger als Mark");
 }
+*/
 
 /************ Ternäre Schreibweise ************/
+/*
 console.log( (isJohnOlder) ? "John is older" : (isJohnEqual) ? "John and Mark are equal" : "Mark is older")
+*/
+
+/************ Fallunterscheidung / CASE|SWITCH 1 ************/
+/*
+let firstName,job;
+firstName = "Jane";
+//job = "driver"; // ... fährt Taxi
+//job = "diver"; // ... taucht im Rhein
+//job = "pilot"; // ... macht etwas anderes
+//job = "artist"; // ... malt Bilder
+//job = "teacher"; // ... unterrichtet
+//job = "instructor"; // ... unterrichtet
+
+// Zeilenumbruch bei Ausgabe mit "\n" (ohne Anführungszeichen!)
+job = prompt("Welchen der genannten Berufe hat Jane? \ndriver, diver, pilot, artist, teacher, instructor");
+
+
+switch (job) {
+    case "driver":
+        console.log(firstName + " fährt Taxi");
+        break;
+    case "diver":
+        console.log(firstName + " taucht im Rhein");
+        break;
+    case "artist":
+        console.log(firstName + " malt Bilder");
+        break;
+    case "teacher":
+    case "instructor":
+        console.log(firstName + " unterrichtet");
+        break;
+    
+    // Für alle nicht bezeichneten Fälle
+    default:
+        console.log(firstName + " macht etwas anderes");
+        break;
+}
+*/
+
+/************ Fallunterscheidung / CASE|SWITCH 2 ************/
+
+let a = parseInt(prompt("Welchen Zahlenwert hat a?"));
+//let a = 1;
+console.log("der eingegebene Wert ist: " + a);
+
+switch (true) {
+    case (a == 1):
+        console.log("a ist 1")
+        break;
+    case (a == 2):
+        console.log("a ist 2")
+        break;
+    case (a > 2):
+        console.log("a ist größer als 2")
+        break;
+
+
+    default:
+        console.log("a hat einen unbekannten Wert");
+        break;
+}
+
