@@ -71,3 +71,6 @@ else
     // letzte Alternative / false
     console.log("John ist jünger als Mark");
 }
+
+/************ Ternäre Schreibweise ************/
+console.log( (isJohnOlder) ? "John is older" : (isJohnEqual) ? "John and Mark are equal" : "Mark is older")
