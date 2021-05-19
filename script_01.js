@@ -15,9 +15,17 @@ isJohnEqual = (ageJohn == ageMark);
 isJohnYounger = (ageJohn < ageMark);
 
 // Ausgabezweig
-console.log("isJohnOlder: " + isJohnOlder);
-console.log("isJohnEqual: " + isJohnEqual);
-console.log("isJohnYounger: " + isJohnYounger);
+//console.log("isJohnOlder: " + isJohnOlder);
+//console.log("isJohnEqual: " + isJohnEqual);
+//console.log("isJohnYounger: " + isJohnYounger);
 
 /************ IF ************/
 // alternativlos (TINA There is no alternative)
+
+//if (false)
+if (isJohnOlder)
+//if (ageJohn > ageMark)
+//if (35 > 30)
+{
+   console.log("John ist älter");
+}
